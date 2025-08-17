@@ -25,8 +25,9 @@ The Movie Database project allows users to search for movies, view details about
 2. Navigate to the cloned repository
 3. Run the command:
    npm install
+4. Run the command:
    npm run dev
-4. Use the provided link in your browser and the program will run.
+5. Use the provided link in your browser and the program will run.
    Enjoy!
    
 # ALX-Capstone-Project-main
