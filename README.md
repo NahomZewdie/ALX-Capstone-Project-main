@@ -22,5 +22,11 @@ The Movie Database project allows users to search for movies, view details about
 1. Clone the repository:
    ```bash
    git clone https://github.com/NahomZewdie/ALX-Capstone-Project-main.git
-# ALX-Capstone-Project-main
+2. Navigate to the cloned repository
+3. Run the command:
+   npm install
+   npm run dev
+4. Use the provided link in your browser and the program will run.
+   Enjoy!
+   
 # ALX-Capstone-Project-main
