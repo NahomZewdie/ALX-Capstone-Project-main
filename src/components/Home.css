@@ -1,0 +1,203 @@
+/* container */
+.movies-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #000;
+}
+
+/* Title */
+.movies-title {
+  font-size: 36px;
+  color: #c94118;
+  margin-bottom: 20px;
+  
+}
+
+/* row title */
+.row-title {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* row design*/
+.movies-row {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin-bottom: 30px;
+  gap: 20px; 
+}
+
+/* grid */
+.movies-grid {
+  display: flex;
+  gap: 20px;
+}
+
+/* Card design*/
+.movie-card {
+  width: 120px; 
+  height: 200px; 
+  background-color: #c94118;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Movie Image*/
+.movie-image {
+  width: 100%;
+  height: 140px; 
+  border-radius: 4px;
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+/* Movie title*/
+.movie-title {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Row buttons*/
+.row-button {
+  background-color: #000; 
+  color: #c94118;
+  border: none;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.row-button:hover:not(:disabled) {
+  background-color: #444; 
+}
+
+
+/* Responsive Design */
+
+/* For Tablets*/
+@media (max-width: 1024px) {
+  .movies-grid {
+      grid-template-columns: repeat(4, 1fr); 
+  }
+  .movies-title {
+      font-size: 30px;
+  }
+
+  .movie-card {
+      width: 150px;
+  }
+
+  .row-title {
+      font-size: 20px;
+  }
+
+  .row-button {
+      padding: 8px;
+  }
+}
+
+/* For Large Mobiles */
+@media (max-width: 768px) {
+  .movies-grid {
+      grid-template-columns: repeat(3, 1fr); 
+  }
+  .movies-title {
+      font-size: 24px;
+      padding: 10px;
+  }
+
+  .movie-card {
+      width: 120px;
+  }
+
+  .row-title {
+      font-size: 18px;
+  }
+
+  .row-button {
+      padding: 6px;
+      font-size: 14px;
+  }
+}
+
+/* For small phones (screens less than 576px)*/
+@media (max-width: 576px) {
+  .movies-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .movies-title {
+      font-size: 20px;
+  }
+
+  .movie-card {
+      width: 100px;
+  }
+
+  .movie-image {
+      border-radius: 4px;
+  }
+
+  .row-title {
+      font-size: 16px;
+  }
+
+  .row-button {
+      padding: 5px;
+      font-size: 12px;
+  }
+}
+/* Media query for small screens*/
+@media (max-width: 320px) {
+  .movies-container {
+    padding: 10px;
+  }
+
+  .movies-row {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .movies-grid {
+    gap: 10px; 
+  }
+
+  .movie-card {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .row-button {
+    width: 30px; 
+    height: 30px;
+    font-size: 12px; 
+  }
+}
+
